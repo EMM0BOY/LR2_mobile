@@ -30,6 +30,7 @@ class Activity1 : AppCompatActivity() {
         intent.putExtra("data", event.data)
         startActivity(intent)
     }
+
     override fun onDestroy() {
         super.onDestroy()
         EventBus.getDefault().unregister(this)
